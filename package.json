@@ -1,11 +1,14 @@
 {
-  "name": "react-boilerplate",
+  "name": "react-easy-signup-form",
+  "homepage": "https://amarkantku.github.io/react-easy-signup-form",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "cypress run  --headless --reporter mochawesome",
     "start": "webpack-dev-server --mode development --watch --open --hot --port=3000",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --mode production"
   },
   "keywords": [],
@@ -38,6 +41,7 @@
     "babel-preset-react": "^6.24.1",
     "css-loader": "^4.3.0",
     "file-loader": "6.2.0",
+    "gh-pages": "^3.2.3",
     "html-webpack-plugin": "^4.5.0",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.2",
