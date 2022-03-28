@@ -3,7 +3,7 @@ import '../styles/App.css';
 
 const App = () => {
   return (
-    <div>This is the main page</div>
+    <div>Hello React</div>
   )
 }
 
